@@ -129,6 +129,10 @@ no Android funcionar com apoio de servidor, isso é comportamento daquele
 componente do sistema, e não do Siloé.</p>
 
 <h2>Permissões que o aplicativo declara</h2>
+<p>São seis, e é esta a lista que a ficha da Google Play mostra. As três
+primeiras estão no nosso código; as três últimas entram com as bibliotecas do
+próprio Google e existem pelo mesmo motivo que a primeira — baixar o pacote de
+pranchas.</p>
 <ul>
   <li><code>INTERNET</code> — para os dois momentos descritos acima.</li>
   <li><code>POST_NOTIFICATIONS</code> — para mostrar o lembrete diário de
@@ -136,9 +140,14 @@ componente do sistema, e não do Siloé.</p>
       aparelho.</li>
   <li><code>RECEIVE_BOOT_COMPLETED</code> — para reagendar esse mesmo lembrete
       depois que o aparelho reinicia.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — para saber se há conexão antes de
+      tentar o download.</li>
+  <li><code>FOREGROUND_SERVICE</code> e
+      <code>FOREGROUND_SERVICE_DATA_SYNC</code> — o download das pranchas roda
+      em primeiro plano para o sistema não o interromper no meio.</li>
 </ul>
-<p>Não há nenhuma outra: sem localização, sem contatos, sem câmera, sem
-microfone, sem identificador de publicidade.</p>
+<p>Não há nenhuma outra: <strong>sem localização, sem contatos, sem câmera, sem
+microfone, sem identificador de publicidade</strong>.</p>
 
 <h2>Crianças</h2>
 <p>O aplicativo não é dirigido a crianças e não coleta dado nenhum de ninguém,
@@ -225,15 +234,23 @@ with server support, that is the behaviour of that system component, and not of
 Siloé.</p>
 
 <h2>Permissions the application declares</h2>
+<p>There are six, and this is the list the Google Play listing shows. The first
+three are in our own code; the last three come with Google's own libraries and
+exist for the same reason as the first — downloading the plates package.</p>
 <ul>
   <li><code>INTERNET</code> — for the two moments described above.</li>
   <li><code>POST_NOTIFICATIONS</code> — to show the daily reading reminder, if
       you turn it on. The notification is composed and fired on the device.</li>
   <li><code>RECEIVE_BOOT_COMPLETED</code> — to reschedule that same reminder
       after the device restarts.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — to know whether there is a connection
+      before attempting the download.</li>
+  <li><code>FOREGROUND_SERVICE</code> and
+      <code>FOREGROUND_SERVICE_DATA_SYNC</code> — the plates download runs in
+      the foreground so the system does not interrupt it midway.</li>
 </ul>
-<p>There are no others: no location, no contacts, no camera, no microphone, no
-advertising identifier.</p>
+<p>There are no others: <strong>no location, no contacts, no camera, no
+microphone, no advertising identifier</strong>.</p>
 
 <h2>Children</h2>
 <p>The application is not directed at children and collects no data from
