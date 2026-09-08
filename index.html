@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Siloé — Política de Privacidade</title>
+<!--
+  ESTA PAGINA E A VERSAO PUBLICA DE `loja/POLITICA-DE-PRIVACIDADE.md`.
+  As duas tem de dizer a mesma coisa. Ate 08/09/2026 nao diziam: esta afirmava
+  que o aplicativo NAO declarava `android.permission.INTERNET`, o que deixou de
+  ser verdade em 04/09, quando as pranchas passaram a descer pelo Play Asset
+  Delivery. A permissao aparece na ficha da Play Store para qualquer pessoa, de
+  modo que a pagina se contradizia sozinha — num documento em que isso e grave.
+  Quem mexer aqui mexe no `.md` junto, e ao contrario tambem.
+-->
+<style>
+  :root{
+    --fundo:#100f0d; --papel:#171613; --casca:#e4ddcf; --fraco:#9b9488;
+    --ouro:#b08d4f; --fio:rgba(176,141,79,.28);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--fundo); color:var(--casca);
+    font:400 17px/1.75 Georgia,"Times New Roman",serif;
+    padding:0 20px 80px;
+  }
+  main{max-width:660px; margin:0 auto}
+  header{padding:64px 0 34px; border-bottom:1px solid var(--fio); margin-bottom:38px}
+  h1{font-size:2rem; letter-spacing:.02em; margin:0 0 8px; font-weight:600}
+  .sub{color:var(--fraco); font-size:.95rem; margin:0}
+  h2{
+    font-size:.74rem; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--ouro); font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;
+    font-weight:500; margin:44px 0 12px;
+  }
+  p{margin:0 0 16px}
+  ul,ol{margin:0 0 16px; padding-left:22px}
+  li{margin:0 0 8px}
+  strong{color:#f0e9db; font-weight:600}
+  code{
+    font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;
+    font-size:.86em; color:#d6ba85; background:rgba(176,141,79,.1);
+    padding:1px 5px; border-radius:4px;
+  }
+  .caixa{
+    border:1px solid var(--fio); border-radius:10px; padding:18px 22px;
+    background:var(--papel); margin:0 0 22px;
+  }
+  .caixa p:last-child{margin-bottom:0}
+  hr{border:0; border-top:1px solid var(--fio); margin:56px 0 38px}
+  a{color:var(--ouro)}
+  footer{color:var(--fraco); font-size:.86rem; margin-top:48px}
+  [lang="en"] h1{font-size:1.7rem}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Política de Privacidade</h1>
+  <p class="sub">Siloé — Bíblia Ilustrada · última atualização: 8 de setembro de 2026</p>
+</header>
+
+<div class="caixa">
+  <p><strong>Resumo:</strong> o Siloé não coleta nada. Não há conta, não há
+  cadastro, não há anúncio e não há rastreamento. Tudo o que você faz dentro do
+  aplicativo — o que leu, o que marcou, o que anotou — fica gravado no seu
+  próprio aparelho e não é enviado a lugar nenhum.</p>
+</div>
+
+<h2>Quem somos</h2>
+<p>O Siloé é um aplicativo de leitura da Bíblia para Android, distribuído pela
+Google Play. Este documento descreve o tratamento de dados do aplicativo.</p>
+
+<h2>Dados que coletamos</h2>
+<p><strong>Nenhum.</strong> O aplicativo não coleta, não transmite e não
+compartilha dado pessoal de espécie alguma. Não há SDK de publicidade, não há
+ferramenta de análise de uso, não há relatório de falhas remoto e não há pixel
+de rastreio.</p>
+
+<h2>O que fica no aparelho</h2>
+<p>Estes dados são gravados no armazenamento interno do aplicativo, no seu
+telefone, e nunca saem dele:</p>
+<ul>
+  <li>o idioma, a edição da Bíblia e as preferências de leitura — tema, tamanho
+      da letra, correção de cor para daltonismo;</li>
+  <li>o capítulo em que você parou e a lista do que já leu;</li>
+  <li>os versículos que você marcou e as anotações que escreveu;</li>
+  <li>o plano de leitura em andamento;</li>
+  <li>o horário do lembrete diário, se você o tiver ligado.</li>
+</ul>
+<p>Desinstalar o aplicativo apaga tudo isso. Não há cópia em servidor, e
+portanto não há como recuperá-la — nem por nós. Se a cópia de segurança do
+Android estiver ligada na sua conta Google, esses dados podem ir junto: esse
+backup é do sistema operacional e da sua conta, e é regido pela política de
+privacidade do Google, não por esta.</p>
+
+<h2>O que sai do aparelho, e por quê</h2>
+<p>O aplicativo declara a permissão de <strong>internet</strong>
+(<code>android.permission.INTERNET</code>), e ela é usada em dois momentos, os
+dois iniciados por você:</p>
+<ol>
+  <li><strong>A compra.</strong> Ao comprar uma das edições pagas, a conversa é
+      com a Google Play, pelo mecanismo de compras do próprio Android. Nós não
+      vemos, não recebemos e não guardamos nenhum dado de pagamento — tudo o
+      que o aplicativo recebe de volta é a resposta <em>comprado</em> ou
+      <em>não comprado</em> para cada produto.</li>
+  <li><strong>O download das pranchas.</strong> Quem compra baixa, uma única
+      vez, o pacote de 234 pranchas e 116 capas. Esse download vem do
+      <strong>Play Asset Delivery</strong>, do próprio Google — não há servidor
+      nosso envolvido, e nenhuma informação sua viaja nele.</li>
+</ol>
+<p>Fora esses dois momentos, o aplicativo não faz nenhuma requisição de rede. A
+leitura, a busca, o estudo, a narração e a geração do documento em PDF
+funcionam inteiramente offline, com o texto bíblico, as notas, as fontes e as
+iluminuras dentro do próprio aplicativo.</p>
+
+<h2>Links para fora</h2>
+<p>As notas das pranchas citam as fontes em que se apoiam, e algumas trazem o
+endereço da licença ou do acervo original. Tocar num desses endereços abre o
+<strong>navegador do seu telefone</strong> — a partir dali vale a política de
+privacidade daquele site, não a nossa. Nenhuma tela do aplicativo busca
+conteúdo de fora.</p>
+
+<h2>Narração</h2>
+<p>A leitura em voz alta usa o sintetizador de voz instalado no próprio
+Android. O texto é entregue ao sistema do aparelho; se a voz que você escolheu
+no Android funcionar com apoio de servidor, isso é comportamento daquele
+componente do sistema, e não do Siloé.</p>
+
+<h2>Permissões que o aplicativo declara</h2>
+<ul>
+  <li><code>INTERNET</code> — para os dois momentos descritos acima.</li>
+  <li><code>POST_NOTIFICATIONS</code> — para mostrar o lembrete diário de
+      leitura, se você o ligar. A notificação é montada e disparada dentro do
+      aparelho.</li>
+  <li><code>RECEIVE_BOOT_COMPLETED</code> — para reagendar esse mesmo lembrete
+      depois que o aparelho reinicia.</li>
+</ul>
+<p>Não há nenhuma outra: sem localização, sem contatos, sem câmera, sem
+microfone, sem identificador de publicidade.</p>
+
+<h2>Crianças</h2>
+<p>O aplicativo não é dirigido a crianças e não coleta dado nenhum de ninguém,
+de qualquer idade.</p>
+
+<h2>Mudanças nesta política</h2>
+<p>Se esta política mudar, a data no topo muda junto, e a versão nova passa a
+valer a partir da publicação.</p>
+
+<h2>Contato</h2>
+<p>Para qualquer dúvida sobre privacidade, escreva para
+<a href="mailto:bible.siloe@gmail.com">bible.siloe@gmail.com</a> — o mesmo
+endereço que aparece dentro do aplicativo e na ficha da Google Play.</p>
+
+<hr>
+
+<section lang="en">
+<h1>Privacy Policy</h1>
+<p class="sub">Siloé — Illustrated Bible · last updated 8 September 2026</p>
+
+<div class="caixa" style="margin-top:22px">
+  <p><strong>Summary:</strong> Siloé collects nothing. There is no account, no
+  sign-up, no advertising and no tracking. Everything you do inside the
+  application — what you read, what you highlight, what you write — is stored
+  on your own device and is sent nowhere.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Siloé is a Bible reading application for Android, distributed through Google
+Play. This document describes how the application handles data.</p>
+
+<h2>Data we collect</h2>
+<p><strong>None.</strong> The application collects, transmits and shares no
+personal data of any kind. There is no advertising SDK, no analytics tooling,
+no remote crash reporting and no tracking pixel.</p>
+
+<h2>What stays on the device</h2>
+<p>This data is written to the application's internal storage on your phone and
+never leaves it:</p>
+<ul>
+  <li>the language, the Bible edition and the reading preferences — theme, type
+      size, colour-vision adjustment;</li>
+  <li>the chapter you stopped at and the list of what you have read;</li>
+  <li>the verses you highlighted and the notes you wrote;</li>
+  <li>the reading plan in progress;</li>
+  <li>the daily reminder time, if you turned it on.</li>
+</ul>
+<p>Uninstalling the application erases all of it. There is no copy on a server,
+and therefore no way to recover it — not even by us. If Android Backup is
+enabled on your Google account, this data may be included: that backup belongs
+to the operating system and to your account, and is governed by Google's
+privacy policy, not by this one.</p>
+
+<h2>What leaves the device, and why</h2>
+<p>The application declares the <strong>internet</strong> permission
+(<code>android.permission.INTERNET</code>), and it is used at two moments, both
+started by you:</p>
+<ol>
+  <li><strong>The purchase.</strong> When you buy one of the paid editions, the
+      exchange is with Google Play, through Android's own purchase mechanism.
+      We do not see, do not receive and do not store any payment data — all the
+      application gets back is a <em>purchased</em> or <em>not purchased</em>
+      answer for each product.</li>
+  <li><strong>The plates download.</strong> Whoever buys downloads, once, the
+      package of 234 plates and 116 covers. That download comes from
+      <strong>Play Asset Delivery</strong>, from Google itself — no server of
+      ours is involved, and none of your information travels in it.</li>
+</ol>
+<p>Outside those two moments the application makes no network request at all.
+Reading, search, study, narration and the PDF document all work entirely
+offline, with the biblical text, the notes, the sources and the illuminations
+inside the application itself.</p>
+
+<h2>Links out</h2>
+<p>The plate notes cite the sources they rest on, and some carry the address of
+the licence or of the original archive. Tapping one of those addresses opens
+<strong>your phone's browser</strong> — from there that site's privacy policy
+applies, not ours. No screen of the application fetches content from outside.</p>
+
+<h2>Narration</h2>
+<p>Reading aloud uses the speech synthesiser installed on Android itself. The
+text is handed to the device's system; if the voice you chose in Android works
+with server support, that is the behaviour of that system component, and not of
+Siloé.</p>
+
+<h2>Permissions the application declares</h2>
+<ul>
+  <li><code>INTERNET</code> — for the two moments described above.</li>
+  <li><code>POST_NOTIFICATIONS</code> — to show the daily reading reminder, if
+      you turn it on. The notification is composed and fired on the device.</li>
+  <li><code>RECEIVE_BOOT_COMPLETED</code> — to reschedule that same reminder
+      after the device restarts.</li>
+</ul>
+<p>There are no others: no location, no contacts, no camera, no microphone, no
+advertising identifier.</p>
+
+<h2>Children</h2>
+<p>The application is not directed at children and collects no data from
+anyone, of any age.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the date at the top changes with it, and the new
+version applies from publication.</p>
+
+<h2>Contact</h2>
+<p>For any question about privacy, write to
+<a href="mailto:bible.siloe@gmail.com">bible.siloe@gmail.com</a> — the same
+address that appears inside the application and on the Google Play listing.</p>
+</section>
+
+<footer>Siloé — Bíblia Ilustrada · Illustrated Bible</footer>
+
+</main>
+</body>
+</html>
