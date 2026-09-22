@@ -58,14 +58,17 @@
 
 <header>
   <h1>Política de Privacidade</h1>
-  <p class="sub">Siloé — Bíblia Ilustrada · última atualização: 8 de setembro de 2026</p>
+  <p class="sub">Siloé — Bíblia Ilustrada · última atualização: 22 de setembro de 2026</p>
 </header>
 
 <div class="caixa">
   <p><strong>Resumo:</strong> o Siloé não coleta nada. Não há conta, não há
   cadastro, não há anúncio e não há rastreamento. Tudo o que você faz dentro do
   aplicativo — o que leu, o que marcou, o que anotou — fica gravado no seu
-  próprio aparelho e não é enviado a lugar nenhum.</p>
+  próprio aparelho. Não enviamos nada a servidor nosso. Se o backup do Android
+  estiver ligado no seu telefone, o próprio sistema guarda uma cópia desses dados
+  na sua conta Google — é opcional, é do Android, e desligá-lo não tira nenhuma
+  função do aplicativo.</p>
 </div>
 
 <h2>Quem somos</h2>
@@ -94,6 +97,11 @@ portanto não há como recuperá-la — nem por nós. Se a cópia de segurança 
 Android estiver ligada na sua conta Google, esses dados podem ir junto: esse
 backup é do sistema operacional e da sua conta, e é regido pela política de
 privacidade do Google, não por esta.</p>
+<p>Há também a <strong>cópia de segurança em arquivo</strong>, em Ajustes ›
+Cópia de segurança: o aplicativo grava num arquivo o que é seu — capítulos
+lidos, marcações, anotações, planos, onde você parou — e entrega o arquivo a
+você, pela folha de compartilhamento do Android. Para onde ele vai é você quem
+escolhe, e nós não vemos nem o arquivo nem o destino.</p>
 
 <h2>O que sai do aparelho, e por quê</h2>
 <p>O aplicativo declara a permissão de <strong>internet</strong>
@@ -129,7 +137,7 @@ no Android funcionar com apoio de servidor, isso é comportamento daquele
 componente do sistema, e não do Siloé.</p>
 
 <h2>Permissões que o aplicativo declara</h2>
-<p>São seis, e é esta a lista que a ficha da Google Play mostra. As três
+<p>São sete, e é esta a lista que a ficha da Google Play mostra. As quatro
 primeiras estão no nosso código; as três últimas entram com as bibliotecas do
 próprio Google e existem pelo mesmo motivo que a primeira — baixar o pacote de
 pranchas.</p>
@@ -138,8 +146,9 @@ pranchas.</p>
   <li><code>POST_NOTIFICATIONS</code> — para mostrar o lembrete diário de
       leitura, se você o ligar. A notificação é montada e disparada dentro do
       aparelho.</li>
-  <li><code>RECEIVE_BOOT_COMPLETED</code> — para reagendar esse mesmo lembrete
-      depois que o aparelho reinicia.</li>
+  \1\n  <li><code>SCHEDULE_EXACT_ALARM</code> — para o lembrete chegar na hora que\n      você escolheu, e não até meia hora depois. Sem ela o aplicativo continua
+      funcionando: o aviso sai numa janela de alguns minutos em volta do
+      horário.</li>
   <li><code>ACCESS_NETWORK_STATE</code> — para saber se há conexão antes de
       tentar o download.</li>
   <li><code>FOREGROUND_SERVICE</code> e
@@ -166,13 +175,15 @@ endereço que aparece dentro do aplicativo e na ficha da Google Play.</p>
 
 <section lang="en">
 <h1>Privacy Policy</h1>
-<p class="sub">Siloé — Illustrated Bible · last updated 8 September 2026</p>
+<p class="sub">Siloé — Illustrated Bible · last updated 22 September 2026</p>
 
 <div class="caixa" style="margin-top:22px">
   <p><strong>Summary:</strong> Siloé collects nothing. There is no account, no
   sign-up, no advertising and no tracking. Everything you do inside the
   application — what you read, what you highlight, what you write — is stored
-  on your own device and is sent nowhere.</p>
+  on your own device. We send nothing to any server of ours. If Android backup
+  is on, the system itself keeps a copy of that data in your Google account — it
+  is optional, it belongs to Android, and turning it off takes no feature away.</p>
 </div>
 
 <h2>Who we are</h2>
@@ -199,7 +210,10 @@ never leaves it:</p>
 and therefore no way to recover it — not even by us. If Android Backup is
 enabled on your Google account, this data may be included: that backup belongs
 to the operating system and to your account, and is governed by Google's
-privacy policy, not by this one.</p>
+\1\n<p>There is also the <strong>backup to a file</strong>, in Settings › Backup: the\napp writes what is yours — chapters read, highlights, notes, plans, where you
+stopped — into a file and hands that file to you, through the Android share
+sheet. Where it goes is your choice, and we see neither the file nor the
+destination.</p>
 
 <h2>What leaves the device, and why</h2>
 <p>The application declares the <strong>internet</strong> permission
@@ -234,15 +248,15 @@ with server support, that is the behaviour of that system component, and not of
 Siloé.</p>
 
 <h2>Permissions the application declares</h2>
-<p>There are six, and this is the list the Google Play listing shows. The first
-three are in our own code; the last three come with Google's own libraries and
+<p>There are seven, and this is the list the Google Play listing shows. The first
+four are in our own code; the last three come with Google's own libraries and
 exist for the same reason as the first — downloading the plates package.</p>
 <ul>
   <li><code>INTERNET</code> — for the two moments described above.</li>
   <li><code>POST_NOTIFICATIONS</code> — to show the daily reading reminder, if
       you turn it on. The notification is composed and fired on the device.</li>
-  <li><code>RECEIVE_BOOT_COMPLETED</code> — to reschedule that same reminder
-      after the device restarts.</li>
+  \1\n  <li><code>SCHEDULE_EXACT_ALARM</code> — so the reminder arrives at the time you\n      chose, and not up to half an hour later. Without it the app still works: the
+      notice goes out within a few minutes around that time.</li>
   <li><code>ACCESS_NETWORK_STATE</code> — to know whether there is a connection
       before attempting the download.</li>
   <li><code>FOREGROUND_SERVICE</code> and
