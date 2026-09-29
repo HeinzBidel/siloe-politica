@@ -58,7 +58,7 @@
 
 <header>
   <h1>Política de Privacidade</h1>
-  <p class="sub">Siloé — Bíblia Ilustrada · última atualização: 22 de setembro de 2026</p>
+  <p class="sub">Siloé — Bíblia Ilustrada · última atualização: 29 de setembro de 2026</p>
 </header>
 
 <div class="caixa">
@@ -105,23 +105,29 @@ escolhe, e nós não vemos nem o arquivo nem o destino.</p>
 
 <h2>O que sai do aparelho, e por quê</h2>
 <p>O aplicativo declara a permissão de <strong>internet</strong>
-(<code>android.permission.INTERNET</code>), e ela é usada em dois momentos, os
-dois iniciados por você:</p>
+(<code>android.permission.INTERNET</code>), e ela é usada em três momentos, os
+três iniciados por você:</p>
 <ol>
+  <li><strong>O idioma.</strong> O texto bíblico e o estudo de cada idioma não
+      vêm dentro do aplicativo: descem uma única vez quando você escolhe o
+      idioma, na primeira abertura — e de novo só se você trocar de idioma ou
+      comparar com uma tradução de outro idioma. Esse download vem do
+      <strong>Play Asset Delivery</strong>, do próprio Google — não há servidor
+      nosso envolvido, e nenhuma informação sua viaja nele.</li>
   <li><strong>A compra.</strong> Ao comprar uma das edições pagas, a conversa é
       com a Google Play, pelo mecanismo de compras do próprio Android. Nós não
       vemos, não recebemos e não guardamos nenhum dado de pagamento — tudo o
       que o aplicativo recebe de volta é a resposta <em>comprado</em> ou
       <em>não comprado</em> para cada produto.</li>
   <li><strong>O download das pranchas.</strong> Quem compra baixa, uma única
-      vez, o pacote de 234 pranchas e 116 capas. Esse download vem do
+      vez, o pacote de 235 pranchas e 116 capas. Esse download vem do
       <strong>Play Asset Delivery</strong>, do próprio Google — não há servidor
       nosso envolvido, e nenhuma informação sua viaja nele.</li>
 </ol>
-<p>Fora esses dois momentos, o aplicativo não faz nenhuma requisição de rede. A
+<p>Fora esses três momentos, o aplicativo não faz nenhuma requisição de rede. A
 leitura, a busca, o estudo, a narração e a geração do documento em PDF
-funcionam inteiramente offline, com o texto bíblico, as notas, as fontes e as
-iluminuras dentro do próprio aplicativo.</p>
+funcionam inteiramente offline: depois do download do idioma, o texto bíblico,
+as notas, as fontes e as iluminuras ficam no próprio aparelho.</p>
 
 <h2>Links para fora</h2>
 <p>As notas das pranchas citam as fontes em que se apoiam, e algumas trazem o
@@ -139,20 +145,23 @@ componente do sistema, e não do Siloé.</p>
 <h2>Permissões que o aplicativo declara</h2>
 <p>São sete, e é esta a lista que a ficha da Google Play mostra. As quatro
 primeiras estão no nosso código; as três últimas entram com as bibliotecas do
-próprio Google e existem pelo mesmo motivo que a primeira — baixar o pacote de
-pranchas.</p>
+próprio Google e existem pelo mesmo motivo que a primeira — baixar os pacotes do idioma e
+das pranchas.</p>
 <ul>
-  <li><code>INTERNET</code> — para os dois momentos descritos acima.</li>
+  <li><code>INTERNET</code> — para os três momentos descritos acima.</li>
   <li><code>POST_NOTIFICATIONS</code> — para mostrar o lembrete diário de
       leitura, se você o ligar. A notificação é montada e disparada dentro do
       aparelho.</li>
-  \1\n  <li><code>SCHEDULE_EXACT_ALARM</code> — para o lembrete chegar na hora que\n      você escolheu, e não até meia hora depois. Sem ela o aplicativo continua
+  <li><code>RECEIVE_BOOT_COMPLETED</code> — para reagendar esse mesmo lembrete
+      depois que o aparelho reinicia.</li>
+  <li><code>SCHEDULE_EXACT_ALARM</code> — para o lembrete chegar na hora que
+      você escolheu, e não até meia hora depois. Sem ela o aplicativo continua
       funcionando: o aviso sai numa janela de alguns minutos em volta do
       horário.</li>
   <li><code>ACCESS_NETWORK_STATE</code> — para saber se há conexão antes de
       tentar o download.</li>
   <li><code>FOREGROUND_SERVICE</code> e
-      <code>FOREGROUND_SERVICE_DATA_SYNC</code> — o download das pranchas roda
+      <code>FOREGROUND_SERVICE_DATA_SYNC</code> — esses downloads rodam
       em primeiro plano para o sistema não o interromper no meio.</li>
 </ul>
 <p>Não há nenhuma outra: <strong>sem localização, sem contatos, sem câmera, sem
@@ -175,7 +184,7 @@ endereço que aparece dentro do aplicativo e na ficha da Google Play.</p>
 
 <section lang="en">
 <h1>Privacy Policy</h1>
-<p class="sub">Siloé — Illustrated Bible · last updated 22 September 2026</p>
+<p class="sub">Siloé — Illustrated Bible · last updated 29 September 2026</p>
 
 <div class="caixa" style="margin-top:22px">
   <p><strong>Summary:</strong> Siloé collects nothing. There is no account, no
@@ -210,30 +219,38 @@ never leaves it:</p>
 and therefore no way to recover it — not even by us. If Android Backup is
 enabled on your Google account, this data may be included: that backup belongs
 to the operating system and to your account, and is governed by Google's
-\1\n<p>There is also the <strong>backup to a file</strong>, in Settings › Backup: the\napp writes what is yours — chapters read, highlights, notes, plans, where you
+privacy policy, not by this one.</p>
+<p>There is also the <strong>backup to a file</strong>, in Settings › Backup: the
+app writes what is yours — chapters read, highlights, notes, plans, where you
 stopped — into a file and hands that file to you, through the Android share
 sheet. Where it goes is your choice, and we see neither the file nor the
 destination.</p>
 
 <h2>What leaves the device, and why</h2>
 <p>The application declares the <strong>internet</strong> permission
-(<code>android.permission.INTERNET</code>), and it is used at two moments, both
+(<code>android.permission.INTERNET</code>), and it is used at three moments, all
 started by you:</p>
 <ol>
+  <li><strong>The language.</strong> The biblical text and the study for each
+      language are not inside the application: they are downloaded once, when
+      you choose the language on first opening — and again only if you switch
+      language or compare with a translation in another language. That download
+      comes from <strong>Play Asset Delivery</strong>, from Google itself — no
+      server of ours is involved, and none of your information travels in it.</li>
   <li><strong>The purchase.</strong> When you buy one of the paid editions, the
       exchange is with Google Play, through Android's own purchase mechanism.
       We do not see, do not receive and do not store any payment data — all the
       application gets back is a <em>purchased</em> or <em>not purchased</em>
       answer for each product.</li>
   <li><strong>The plates download.</strong> Whoever buys downloads, once, the
-      package of 234 plates and 116 covers. That download comes from
+      package of 235 plates and 116 covers. That download comes from
       <strong>Play Asset Delivery</strong>, from Google itself — no server of
       ours is involved, and none of your information travels in it.</li>
 </ol>
-<p>Outside those two moments the application makes no network request at all.
+<p>Outside those three moments the application makes no network request at all.
 Reading, search, study, narration and the PDF document all work entirely
-offline, with the biblical text, the notes, the sources and the illuminations
-inside the application itself.</p>
+offline: after the language download, the biblical text, the notes, the
+sources and the illuminations stay on the device itself.</p>
 
 <h2>Links out</h2>
 <p>The plate notes cite the sources they rest on, and some carry the address of
@@ -250,17 +267,21 @@ Siloé.</p>
 <h2>Permissions the application declares</h2>
 <p>There are seven, and this is the list the Google Play listing shows. The first
 four are in our own code; the last three come with Google's own libraries and
-exist for the same reason as the first — downloading the plates package.</p>
+exist for the same reason as the first — downloading the language and plates
+packages.</p>
 <ul>
-  <li><code>INTERNET</code> — for the two moments described above.</li>
+  <li><code>INTERNET</code> — for the three moments described above.</li>
   <li><code>POST_NOTIFICATIONS</code> — to show the daily reading reminder, if
       you turn it on. The notification is composed and fired on the device.</li>
-  \1\n  <li><code>SCHEDULE_EXACT_ALARM</code> — so the reminder arrives at the time you\n      chose, and not up to half an hour later. Without it the app still works: the
+  <li><code>RECEIVE_BOOT_COMPLETED</code> — to schedule that same reminder again
+      after the device restarts.</li>
+  <li><code>SCHEDULE_EXACT_ALARM</code> — so the reminder arrives at the time you
+      chose, and not up to half an hour later. Without it the app still works: the
       notice goes out within a few minutes around that time.</li>
   <li><code>ACCESS_NETWORK_STATE</code> — to know whether there is a connection
       before attempting the download.</li>
   <li><code>FOREGROUND_SERVICE</code> and
-      <code>FOREGROUND_SERVICE_DATA_SYNC</code> — the plates download runs in
+      <code>FOREGROUND_SERVICE_DATA_SYNC</code> — those downloads run in
       the foreground so the system does not interrupt it midway.</li>
 </ul>
 <p>There are no others: <strong>no location, no contacts, no camera, no
